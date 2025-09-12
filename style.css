@@ -12,7 +12,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #f9fafb;
+  background: #b9edf6;
   color: #1f2937;
 }
 
@@ -24,8 +24,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #111827;
 }
 h1 { font-size: 2.25rem; }
-h2 { font-size: 1.75rem; }
-h3 { font-size: 1.5rem; }
+h2 { font-size: 1.25rem; }
+h3 { font-size: 1rem; }
 
 /* --- Links --- */
 a {
