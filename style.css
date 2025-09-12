@@ -1,0 +1,149 @@
+/* --- Base Reset & Typography --- */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background: #f9fafb;
+  color: #1f2937;
+}
+
+/* --- Headings --- */
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.2em 0 0.6em;
+  line-height: 1.25;
+  font-weight: 700;
+  color: #111827;
+}
+h1 { font-size: 2.25rem; }
+h2 { font-size: 1.75rem; }
+h3 { font-size: 1.5rem; }
+
+/* --- Links --- */
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* --- Paragraphs & Lists --- */
+p {
+  margin: 1em 0;
+  max-width: 65ch;
+}
+ul, ol {
+  margin: 1em 0 1em 2em;
+}
+li {
+  margin: 0.25em 0;
+}
+
+/* --- Images --- */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* --- Buttons & Inputs --- */
+button, input[type="submit"], input[type="button"] {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 0.6em 1.1em;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+button:hover, input[type="submit"]:hover, input[type="button"]:hover {
+  background: #1e40af;
+}
+input, textarea, select {
+  padding: 0.5em 0.75em;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  font-size: 1rem;
+  width: 100%;
+  max-width: 500px;
+}
+input:focus, textarea:focus, select:focus {
+  border-color: #2563eb;
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(37,99,235,0.2);
+}
+
+/* --- Tables --- */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5em 0;
+}
+th, td {
+  border: 1px solid #e5e7eb;
+  padding: 0.75em 1em;
+  text-align: left;
+}
+th {
+  background: #f3f4f6;
+  font-weight: 600;
+}
+
+/* --- Layout Helpers --- */
+main, section, article {
+  padding: 1.5rem;
+  margin: 0 auto;
+  max-width: 900px;
+}
+header, footer {
+  background: #111827;
+  color: #f9fafb;
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+footer {
+  font-size: 0.875rem;
+  opacity: 0.8;
+}
+
+/* --- Blockquotes & Code --- */
+blockquote {
+  border-left: 4px solid #2563eb;
+  padding-left: 1em;
+  color: #374151;
+  margin: 1em 0;
+  font-style: italic;
+}
+code, pre {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  background: #f3f4f6;
+  padding: 0.25em 0.5em;
+  border-radius: 4px;
+}
+pre {
+  display: block;
+  padding: 1em;
+  overflow-x: auto;
+}
+
+/* --- Responsive tweaks --- */
+@media (max-width: 600px) {
+  body {
+    font-size: 15px;
+  }
+  h1 { font-size: 1.75rem; }
+  h2 { font-size: 1.5rem; }
+  main, section, article {
+    padding: 1rem;
+  }
+}
